@@ -1,0 +1,290 @@
+/* Global CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    
+}
+
+body {
+    background: rgba(0, 0, 0, 0.1);
+}
+div {
+    line-height: 1.6;
+}
+p {
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-c {
+    justify-content: center;
+}
+.jc-e {
+    justify-content: flex-end;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+.ai-e {
+    align-items: flex-end;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+.form-row .form-col {
+    margin-right: 20px;
+}
+.form-row .form-col:last-child {
+    margin-right: 0;
+}
+.form-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* height: 71px; */
+}
+.form-col .mat-form-field {
+    flex: 1;
+}
+.form-col input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+
+.logo {
+    margin: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(246, 246, 246);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.dashboard-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    height: 30px;
+}
+
+.dashboard-content-header > div:first-child {
+    font-size: 16px;
+}
+
+.dashboard-content {
+    padding: 10px 20px;
+    overflow: auto;
+    flex:1;
+    position: relative;
+}
+
+.dashboard-content > div {
+    height: 1px;
+}
+
+.route-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.route-content-wrapper > div:last-child {
+    flex: 1;
+}
+
+.logged-in-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.logged-in-user:hover {
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.logged-in-user > svg {
+    margin-left: 10px;
+}
+
+.toggle-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-logo-container button {
+    margin-left: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    /* background: white; */
+}
+
+.mat-form-field-appearance-fill .mat-form-field-label {
+    font-size: 16px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    padding: 0 0 0 0;
+}
+.mat-form-field {
+    padding: 0;
+}
+input.mat-input-element {
+    font: normal;
+    font-size: 16px;
+}
+.mat-form-field-wrapper .mat-form-field-flex {
+    padding: 0;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: rgb(54 110 178);
+}
+.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element, .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
+    background: rgb(54 110 178);
+}
+
+.form-error {
+    color: red;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+    font-size: 13px;
+}
+
+.form-error svg {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    white-space: nowrap;
+}
+th, td {
+    text-align: left;
+    padding: 10px;
+
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.success-message {
+    padding: 10px;
+    color: green;
+    background: rgba(0, 255, 0, 0.1);
+    border: 0.5px solid green;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.error-message {
+    padding: 7px;
+    color: red;
+    background: rgba(255, 0, 0, 0.1);
+    border: 0.5px solid red;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.success-message svg,
+.error-message svg {
+    margin-right: 5px;
+}
+
+.success-message svg {
+    color: green;
+}
+
+.error-message svg {
+    color: red;
+}
+
+.mat-flat-button.mat-warn {
+    background: #ca4238;
+}
+
+.mat-flat-button.mat-accent {
+    background: #d34575;
+}
+
+.mat-flat-button.mat-primary {
+    background: #5c6bc3;
+}
+
+.mat-flat-button.mat-success {
+    background: #308946;
+    color: white;
+}
